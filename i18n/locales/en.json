@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "about": "About",
+    "disciplines": "Disciplines",
+    "career": "Career",
+    "contact": "Contact"
+  },
+  "hero": {
+    "available": "Available",
+    "location": "Alsace, France",
+    "subtitle": "Circus Artist · Acrobat",
+    "cta": "Watch Showreel",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "eyebrow": "About",
+    "lead": "From the stages of Parc Astérix to Dubai with <em>Franco Dragone</em>, all the way to the lights of Las Vegas with <em>Cirque du Soleil</em> — an international career blending acrobatics, comedy and performance.",
+    "body": "A gymnast since the age of 8, I discovered the circus arts at 18. Since then, I have built a stage career that combines athletic discipline with an actor's presence, across some of the world's most ambitious productions.",
+    "facts": {
+      "height_label": "Height",
+      "height_value": "163 cm / 5'4\"",
+      "languages_label": "Languages",
+      "languages_value": "French · English",
+      "location_label": "Location",
+      "location_value": "Alsace, France",
+      "available_label": "Available for",
+      "available_value": "Shows · Events · Training"
+    },
+    "download": "Download artist dossier"
+  },
+  "disciplines": {
+    "eyebrow": "The repertoire",
+    "title": "Disciplines",
+    "subtitle": "Three core stage specialties, complemented by a wide range of mastered apparatus. Click on a highlighted card to watch the video.",
+    "watch_video": "watch video",
+    "specialties": "Specialties",
+    "others": "Others disciplines",
+    "levels": {
+      "expert": "Expert",
+      "professional": "Professional",
+      "confirmed": "Confirmed"
+    },
+    "items": {
+      "flying_trapeze": "Flying Trapeze",
+      "bungee_straps": "Bungee Straps",
+      "bungee_straps_desc": "Signature act at La Perle by Dragone — creation of the bungee straps act for ECHO by Cirque du Soleil.",
+      "banquine": "Banquine",
+      "banquine_desc": "Team acrobatic lifts — trust, timing and collective flight.",
+      "acrobatics": "Floor Acrobatics",
+      "acrobatics_label": "Expert · Tumbling",
+      "acrobatics_desc": "Floor acrobatics, tumbling and airtrack — the gymnastic foundation built over fourteen years of practice.",
+      "chinese_pole": "Chinese Pole",
+      "straps": "Straps",
+      "vpole": "V-Pole / Acro Pole",
+      "korean_cradle": "Russian / Korean cradle",
+      "comedy": "Comedy / Acting",
+      "stunt": "Stunt",
+      "street_performance": "Street performance",
+      "dance": "Dance"
+    }
+  },
+  "career": {
+    "eyebrow": "Experience",
+    "title": "Career",
+    "watch_video": "Watch video",
+    "items": {
+      "ka": {
+        "date": "September 2023 — Juin 2025",
+        "title": "KÀ by Cirque du Soleil",
+        "place": "Las Vegas · United States",
+        "desc": "House troupe for KÀ, Cirque du Soleil's permanent show at the MGM Grand. Specialised in stunt and floor acrobatics acts within one of the most ambitious and technically complex productions in the world."
+      },
+      "laperle": {
+        "date": "October 2016 — March 2020",
+        "title": "La Perle by Dragone",
+        "place": "Dubai · United Arab Emirates",
+        "desc": "World-renowned show directed by Franco Dragone. 2 performances per day, 5 days a week. Acts: airtrack acrobatics, bungee straps, banquine, V-Pole. Understudy for the lead character 'Clown Prince' from 2019."
+      },
+      "imaginacie": {
+        "date": "June 2016",
+        "title": "Imaginacie Festival",
+        "place": "Košice · Slovakia",
+        "desc": "Creation of a flying trapeze act with Cirque Évasion for the international Imaginacie festival."
+      },
+      "asterix": {
+        "date": "October 2012 — June 2016",
+        "title": "Parc Astérix",
+        "place": "Paris · France",
+        "desc": "4 seasons as an acrobat and actor. Creations with Jean-Claude Cotillard: 'Fear at the Park' (Gargoyle role), 'The Legion Recruits', 'Gauls vs Romans — The Match'."
+      },
+      "pierre": {
+        "date": "October 2009 — September 2011",
+        "title": "Pierre & Vacances",
+        "place": "Cap Esterel / Port Bourgenay · France",
+        "desc": "First stage experience: circus entertainer, flying trapeze lessons for children and adults, weekly shows."
+      }
+    }
+  },
+  "trophies": {
+    "eyebrow": "Before the stage",
+    "title": "Also a competitive gymnast",
+    "stats": {
+      "years_num": "14 years",
+      "years_desc": "of gymnastics practice",
+      "bronze_num": "3rd",
+      "bronze_desc": "French individual championship, 2003",
+      "gold_num": "1st",
+      "gold_desc": "national team division, 2009"
+    },
+    "watch_video": "Watch 2020 tumbling video"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's work together",
+    "subtitle": "A production, an event, a training session?",
+    "info": {
+      "email_label": "Email",
+      "whatsapp_label": "WhatsApp",
+      "instagram_label": "Instagram",
+      "location_label": "Location",
+      "location_value": "Alsace, France"
+    },
+    "form": {
+      "name_label": "Full name",
+      "name_placeholder": "Your name",
+      "email_label": "Email",
+      "email_placeholder": "youexample.com",
+      "type_label": "Project type",
+      "type_show": "Show",
+      "type_event": "Event",
+      "type_training": "Training",
+      "type_other": "Other",
+      "message_label": "Message",
+      "message_placeholder": "Tell me about your project…",
+      "submit": "Send"
+    },
+    "success": {
+      "title": "Thank you",
+      "message": "Your message has been sent. I'll get back to you shortly."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Damien Hantzer",
+    "credits": "Photo credits: Mathieu Campan · Bastien Colliard · Arnaud Sobczyk · Martin Baran",
+    "instagram": "Instagram",
+    "email": "Email"
+  }
+}

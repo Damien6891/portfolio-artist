@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "about": "À propos",
+    "disciplines": "Disciplines",
+    "career": "Parcours",
+    "contact": "Contact"
+  },
+  "hero": {
+    "available": "Disponible",
+    "location": "Alsace, France",
+    "subtitle": "Artiste de Cirque · Acrobate",
+    "cta": "Voir le Showreel",
+    "scroll": "Défiler"
+  },
+  "about": {
+    "eyebrow": "À propos",
+    "lead": "De la scène du Parc Astérix, à Dubaï avec <em>Franco Dragone</em>, jusqu'aux lumières de Las Vegas avec le <em>Cirque du Soleil</em> — une carrière internationale entre acrobatie, comédie et performance.",
+    "body": "Gymnaste depuis l'âge de 8 ans, je découvre les arts du cirque à 18 ans. Je construis depuis une trajectoire scénique qui allie la rigueur de l'athlète à la présence du comédien, sur les plus grandes productions contemporaines.",
+    "facts": {
+      "height_label": "Taille",
+      "height_value": "163 cm",
+      "languages_label": "Langues",
+      "languages_value": "Français · Anglais",
+      "location_label": "Localisation",
+      "location_value": "Alsace, France",
+      "available_label": "Disponible pour",
+      "available_value": "Spectacles · Events · Formations"
+    },
+    "download": "Télécharger le dossier artiste"
+  },
+  "disciplines": {
+    "eyebrow": "Le répertoire",
+    "title": "Disciplines",
+    "subtitle": "Trois spécialités au cœur du travail scénique, complétées par un large registre d'agrès maîtrisés. Cliquez sur une carte signalée pour ouvrir la vidéo.",
+    "specialties": "Spécialités",
+    "others": "Autres disciplines",
+    "watch_video": "voir la vidéo",
+    "levels": {
+      "expert": "Expert",
+      "professional": "Professionnel",
+      "confirmed": "Confirmé"
+    },
+    "items": {
+      "flying_trapeze": "Trapèze Volant",
+      "bungee_straps": "Bungee Straps",
+      "bungee_straps_desc": "Acte signature de La Perle by Dragone — création de l'acte de bungee straps pour ECHO by Crique du Soleil.",
+      "banquine": "Banquine",
+      "banquine_desc": "Portés acrobatiques en équipe — confiance, timing et envolées collectives.",
+      "acrobatics": "Acrobatie au sol",
+      "acrobatics_label": "Expert · Tumbling",
+      "acrobatics_desc": "Acrobatie au sol, tumbling et airtrack — la base gymnique, socle de quatorze ans de pratique.",
+      "chinese_pole": "Mât Chinois",
+      "straps": "Straps",
+      "vpole": "V-Pole / Acro Pole",
+      "korean_cradle": "Cadre Russe / Coréen",
+      "comedy": "Comédie / Acting",
+      "stunt": "Cascade",
+      "street_performance": "Street performance",
+      "dance": "Danse"
+    }
+  },
+  "career": {
+    "eyebrow": "Expériences",
+    "title": "Parcours",
+    "watch_video": "Voir la vidéo",
+    "items": {
+      "ka": {
+        "date": "Septembre 2023 — Juin 2025",
+        "title": "KÀ - Cirque du Soleil",
+        "place": "Las Vegas · États-Unis",
+        "desc": "House troupe pour le spectacle KÀ, production permanente du Cirque du Soleil au MGM Grand. Spécialisé dans les actes de stunt et d'acrobatie au sol au sein d'un des spectacles les plus ambitieux et techniquement complexes au monde."
+      },
+      "laperle": {
+        "date": "Octobre 2016 — Mars 2020",
+        "title": "La Perle by Dragone",
+        "place": "Dubaï · Émirats Arabes Unis",
+        "desc": "Spectacle de renommée mondiale mis en scène par Franco Dragone. 2 représentations par jour, 5 jours par semaine. Actes : acrobatie airtrack, bungee straps, banquine, V-Pole. Back-up du personnage principal « Clown Prince » à partir de 2019."
+      },
+      "imaginacie": {
+        "date": "Juin 2016",
+        "title": "Festival Imaginacie",
+        "place": "Košice · Slovaquie",
+        "desc": "Création d'un acte de trapèze volant avec le Cirque Évasion pour le festival international Imaginacie."
+      },
+      "asterix": {
+        "date": "Octobre 2012 — Juin 2016",
+        "title": "Parc Astérix",
+        "place": "Paris · France",
+        "desc": "4 saisons en tant qu'acrobate et comédien. Créations avec Jean-Claude Cotillard : « Peur sur le Parc » (rôle Gargouille), « La Légion Recrute », « Gaulois vs Romains — Le Match »."
+      },
+      "pierre": {
+        "date": "Octobre 2009 — Septembre 2011",
+        "title": "Pierre & Vacances",
+        "place": "Cap Esterel / Port Bourgenay · France",
+        "desc": "Première expérience scénique : animateur cirque, cours de trapèze volant pour enfants et adultes, spectacles hebdomadaires."
+      }
+    }
+  },
+  "trophies": {
+    "eyebrow": "Avant la scène",
+    "title": "Également gymnaste compétiteur",
+    "stats": {
+      "years_num": "14 ans",
+      "years_desc": "de pratique de la gymnastique",
+      "bronze_num": "3e",
+      "bronze_desc": "au championnat de France individuel, 2003",
+      "gold_num": "1er",
+      "gold_desc": "en division nationale par équipe, 2009"
+    },
+    "watch_video": "Voir la vidéo tumbling 2020"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Travaillons ensemble",
+    "subtitle": "Une production, un événement, une formation ?",
+    "info": {
+      "email_label": "Email",
+      "whatsapp_label": "WhatsApp",
+      "instagram_label": "Instagram",
+      "location_label": "Localisation",
+      "location_value": "Alsace, France"
+    },
+    "form": {
+      "name_label": "Nom complet",
+      "name_placeholder": "Votre nom",
+      "email_label": "Email",
+      "email_placeholder": "vousexemple.com",
+      "type_label": "Type de projet",
+      "type_show": "Spectacle",
+      "type_event": "Événement",
+      "type_training": "Formation",
+      "type_other": "Autre",
+      "message_label": "Message",
+      "message_placeholder": "Parlez-moi de votre projet…",
+      "submit": "Envoyer"
+    },
+    "success": {
+      "title": "Merci",
+      "message": "Votre message a bien été envoyé. Je vous réponds très vite."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Damien Hantzer",
+    "credits": "Crédits photos : Mathieu Campan · Bastien Colliard · Arnaud Sobczyk · Martin Baran",
+    "instagram": "Instagram",
+    "email": "Email"
+  }
+}
