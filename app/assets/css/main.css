@@ -24,7 +24,13 @@
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+/* RESET */
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
+button {
+  border: none;
+  background: none;
+}
 
 html {
   scroll-behavior: smooth;
@@ -206,6 +212,110 @@ body::after {
 .nav__burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
 .nav__burger.open span:nth-child(2) { opacity: 0; }
 .nav__burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+.lang-switcher {
+  position: relative;
+}
+
+.lang-switcher__current {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: none;
+  border: 1px solid var(--bordure);
+  color: var(--or);
+  font-family: var(--font-corps);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  padding: 0.4rem 0.8rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+.lang-switcher__current:hover {
+  background: var(--or);
+  color: var(--noir);
+}
+.lang-switcher__current svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.3s;
+}
+.lang-switcher.open .lang-switcher__current svg {
+  transform: rotate(180deg);
+}
+
+.lang-switcher__dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: rgba(12, 12, 12, 0.97);
+  border: 1px solid var(--bordure);
+  border-radius: 2px;
+  list-style: none;
+  overflow: hidden;
+  min-width: 80px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition:
+    opacity 0.25s,
+    transform 0.25s,
+    visibility 0.25s;
+}
+.lang-switcher.open .lang-switcher__dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-switcher__dropdown a {
+  display: block;
+  padding: 0.6rem 1rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--gris);
+  transition:
+    color 0.2s,
+    background 0.2s;
+}
+
+.lang-switcher__dropdown button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--gris);
+  transition:
+    color 0.2s,
+    background 0.2s;
+    cursor: pointer;
+}
+
+.lang-switcher__dropdown button::after {
+  content: ""; position: absolute; left: 0; bottom: 0;
+  width: 0; height: 1px; background: var(--or);
+  transition: width 0.35s var(--ease);
+}
+
+.lang-switcher__dropdown button:hover::after {
+  width: 100%;
+}
+
+.lang-switcher__dropdown button:hover,
+.lang-switcher__dropdown button.active {
+  color: var(--or);
+  background: rgba(201, 168, 76, 0.08);
+}
+.lang-switcher__dropdown a:hover,
+.lang-switcher__dropdown a.active {
+  color: var(--or);
+  background: rgba(201, 168, 76, 0.08);
+}
 
 /* ============================================================
    HERO
