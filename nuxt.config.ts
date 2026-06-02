@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
 
+  vite: {
+    optimizeDeps: {
+      include: ['@vue/devtools-core', '@vue/devtools-kit'],
+    },
+  },
+
   app: {
     head: {
       charset: 'utf-8',
@@ -10,7 +16,7 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
-  modules: ['@nuxtjs/i18n'],
+  modules: ['@nuxtjs/i18n', '@nuxt/image'],
 
   css: ['./assets/css/main.css'],
 

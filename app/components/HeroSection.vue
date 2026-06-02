@@ -4,7 +4,7 @@
       class="hero__bg"
       ref="heroBg"
       :style="{
-        backgroundImage: `url('https://damien-hantzer.com/images/la-perle_1.jpg')`,
+        backgroundImage: `url('images/la_perle/bungee_5.webp')`,
       }"
     ></div>
     <div class="hero__overlay"></div>

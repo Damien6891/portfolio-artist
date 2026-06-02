@@ -2,8 +2,8 @@
   <section class="section" id="about">
     <div class="wrap about__grid">
       <div class="about__photo reveal">
-        <img
-          src="https://damien-hantzer.com/images/profile_picture.jpg"
+        <NuxtImg
+          src="/images/profile_picture.jpg"
           alt="Portrait de Damien Hantzer"
           loading="lazy"
         />

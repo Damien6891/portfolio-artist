@@ -24,7 +24,7 @@
             }}</span>
           </div>
           <div class="tl-img">
-            <img :src="item.image" :alt="item.title" loading="lazy" />
+            <NuxtImg :src="item.image" :alt="item.title" loading="lazy" />
           </div>
           <div v-if="item.video" class="tl-cta">
             <span
@@ -57,7 +57,7 @@ const career = [
     place: $t('career.items.ka.place'),
     desc: $t('career.items.ka.desc'),
     tags: [$t('disciplines.items.stunt'), $t('disciplines.items.acrobatics')],
-    image: 'images/KA_boat.jpg',
+    image: 'images/KA/KA_boat.jpg',
     // video: 'uLmsYlyVUjg',
   },
   {
@@ -72,7 +72,7 @@ const career = [
       $t('disciplines.items.vpole'),
       $t('disciplines.items.straps'),
     ],
-    image: 'https://damien-hantzer.com/images/la-perle_1.jpg',
+    image: 'images/la_perle/bungee_5.webp',
     video: 'uLmsYlyVUjg',
   },
   {
@@ -81,7 +81,7 @@ const career = [
     place: $t('career.items.imaginacie.place'),
     desc: $t('career.items.imaginacie.desc'),
     tags: [$t('disciplines.items.flying_trapeze')],
-    image: 'https://damien-hantzer.com/images/imaginacie_1.jpg',
+    image: 'images/imaginacie/imaginacie_1.jpg',
     video: 'uIAY0_mFIz4',
   },
   {
@@ -96,7 +96,7 @@ const career = [
       $t('disciplines.items.street_performance'),
       $t('disciplines.items.dance'),
     ],
-    image: 'https://damien-hantzer.com/images/gargouille.jpg',
+    image: 'images/parc_asterix/la_bete.jpg',
     video: 'fAkgMBngPWU',
   },
   {
@@ -110,7 +110,7 @@ const career = [
       $t('disciplines.items.comedy'),
       $t('disciplines.items.dance'),
     ],
-    image: 'https://damien-hantzer.com/images/trapeze_2.jpg',
+    image: 'images/pierre_et_vacances/trapeze_2.jpg',
     video: '9wY4HaM8ing',
   },
 ];
