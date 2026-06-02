@@ -17,7 +17,7 @@ export default defineNuxtConfig({
 
   ssr: true,
   nitro: {
-    preset: 'static',
+    preset: 'node-server',
     prerender: {
       crawlLinks: true,
       routes: ['/', '/en'], // tes routes de base i18n
