@@ -15,6 +15,16 @@ export default defineNuxtConfig({
     },
   },
 
+  ssr: true,
+  nitro: {
+    preset: 'static',
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/en'], // tes routes de base i18n
+      failOnError: false,
+    },
+  },
+
   devtools: { enabled: true },
   modules: ['@nuxtjs/i18n', '@nuxt/image'],
 
