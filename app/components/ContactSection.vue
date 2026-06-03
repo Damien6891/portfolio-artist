@@ -118,6 +118,7 @@
               placeholder="Votre nom"
               required
             />
+            <p v-if="errors.nom" class="field__error">{{ errors.nom }}</p>
           </div>
           <div class="field">
             <label for="email">Email</label>
@@ -128,6 +129,7 @@
               placeholder="vous@exemple.com"
               required
             />
+            <p v-if="errors.email" class="field__error">{{ errors.email }}</p>
           </div>
           <div class="field">
             <label for="type">Type de projet</label>
@@ -146,6 +148,9 @@
               placeholder="Parlez-moi de votre projet…"
               required
             ></textarea>
+            <p v-if="errors.message" class="field__error">
+              {{ errors.message }}
+            </p>
           </div>
           <button type="submit" class="btn btn--solid">Envoyer</button>
         </form>
@@ -174,13 +179,33 @@
 <script setup>
 const submitted = ref(false);
 const sending = ref(false);
-const error = ref('');
 const form = reactive({ nom: '', email: '', type: 'spectacle', message: '' });
 const firstName = computed(() => form.nom.trim().split(' ')[0]);
 
+const errors = reactive({ nom: '', email: '', message: '' });
+
+const validateEmail = (email) => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+};
+
+const validate = () => {
+  errors.nom = form.nom.trim() ? '' : $t('contact.errors.required_name');
+  errors.email = !form.email.trim()
+    ? $t('contact.errors.required_email')
+    : !validateEmail(form.email)
+      ? $t('contact.errors.invalid_email')
+      : '';
+
+  errors.message = form.message.trim()
+    ? ''
+    : $t('contact.errors.required_message');
+
+  return !errors.nom && !errors.email && !errors.message;
+};
+
 async function handleSubmit() {
+  if (!validate()) return;
   sending.value = true;
-  error.value = '';
   try {
     await $fetch('/api/contact', {
       method: 'POST',
@@ -188,7 +213,7 @@ async function handleSubmit() {
     });
     submitted.value = true;
   } catch (e) {
-    error.value = 'Une erreur est survenue. Merci de réessayer.';
+    errors.message = 'Une erreur est survenue. Merci de réessayer.';
   } finally {
     sending.value = false;
   }

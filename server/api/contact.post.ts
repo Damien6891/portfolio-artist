@@ -4,8 +4,14 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const { nom, email, type, message } = body;
 
-  if (!nom || !email || !message) {
+  if (!nom?.trim() || !email?.trim() || !message?.trim()) {
     throw createError({ statusCode: 400, message: 'Champs manquants' });
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailRegex.test(email)) {
+    throw createError({ statusCode: 400, message: 'Email invalide' });
   }
 
   const config = useRuntimeConfig();

@@ -141,6 +141,12 @@
     "success": {
       "title": "Merci",
       "message": "Votre message a bien été envoyé. Je vous réponds très vite."
+    },
+    "errors": {
+      "required_name": "Le nom est requis",
+      "required_email": "L'email est requis",
+      "invalid_email" : "L'adresse email n'est pas valide",
+      "required_message": "Le message est requis"
     }
   },
   "footer": {

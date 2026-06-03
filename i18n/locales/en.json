@@ -141,6 +141,12 @@
     "success": {
       "title": "Thank you",
       "message": "Your message has been sent. I'll get back to you shortly."
+    },
+    "errors": {
+      "required_name": "Name is required",
+      "required_email": "Email is required",
+      "invalid_email" : "Email address is not valid",
+      "required_message": "Message is required"
     }
   },
   "footer": {
