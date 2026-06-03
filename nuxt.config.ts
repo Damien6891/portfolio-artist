@@ -25,6 +25,11 @@ export default defineNuxtConfig({
     },
   },
 
+  runtimeConfig: {
+    mailUser: '',
+    mailPass: '',
+  },
+
   devtools: { enabled: true },
   modules: ['@nuxtjs/i18n', '@nuxt/image'],
 

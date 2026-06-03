@@ -173,10 +173,24 @@
 
 <script setup>
 const submitted = ref(false);
+const sending = ref(false);
+const error = ref('');
 const form = reactive({ nom: '', email: '', type: 'spectacle', message: '' });
 const firstName = computed(() => form.nom.trim().split(' ')[0]);
 
-function handleSubmit() {
-  submitted.value = true;
+async function handleSubmit() {
+  sending.value = true;
+  error.value = '';
+  try {
+    await $fetch('/api/contact', {
+      method: 'POST',
+      body: form,
+    });
+    submitted.value = true;
+  } catch (e) {
+    error.value = 'Une erreur est survenue. Merci de réessayer.';
+  } finally {
+    sending.value = false;
+  }
 }
 </script>
