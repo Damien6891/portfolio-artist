@@ -146,7 +146,9 @@
       "required_name": "Name is required",
       "required_email": "Email is required",
       "invalid_email" : "Email address is not valid",
-      "required_message": "Message is required"
+      "required_message": "Message is required",
+       "too_many_request": "Too many requests. Try again in one hour.",
+      "global": "An error has occured. Please try again."
     }
   },
   "footer": {

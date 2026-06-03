@@ -213,7 +213,11 @@ async function handleSubmit() {
     });
     submitted.value = true;
   } catch (e) {
-    errors.message = 'Une erreur est survenue. Merci de réessayer.';
+    if (e.statusCode === 429) {
+      errors.message = $t('contact.errors.too_many_request');
+    } else {
+      errors.message = $t('contact.errors.global');
+    }
   } finally {
     sending.value = false;
   }

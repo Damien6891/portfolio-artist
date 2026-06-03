@@ -145,8 +145,10 @@
     "errors": {
       "required_name": "Le nom est requis",
       "required_email": "L'email est requis",
-      "invalid_email" : "L'adresse email n'est pas valide",
-      "required_message": "Le message est requis"
+      "invalid_email": "L'adresse email n'est pas valide",
+      "required_message": "Le message est requis",
+      "too_many_request": "Trop de tentatives. Réessayez dans une heure.",
+      "global": "Une erreur est survenue. Merci de réessayer."
     }
   },
   "footer": {

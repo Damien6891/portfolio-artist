@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 
   vite: {
     optimizeDeps: {
-      include: ['@vue/devtools-core', '@vue/devtools-kit'],
+      include: ['@vue/devtools-core', '@vue/devtools-kit', 'nuxt-security'],
     },
   },
 
@@ -25,13 +25,26 @@ export default defineNuxtConfig({
     },
   },
 
+  // For hostinger mail
   runtimeConfig: {
     mailUser: '',
     mailPass: '',
   },
 
+  // Security - avoid same IP to send to many email
+  routeRules: {
+    '/api/contact': {
+      security: {
+        rateLimiter: {
+          tokensPerInterval: 2,
+          interval: 3600000,
+        },
+      },
+    },
+  },
+
   devtools: { enabled: true },
-  modules: ['@nuxtjs/i18n', '@nuxt/image'],
+  modules: ['@nuxtjs/i18n', '@nuxt/image', 'nuxt-security'],
 
   css: ['./assets/css/main.css'],
 

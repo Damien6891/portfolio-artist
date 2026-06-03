@@ -1,6 +1,32 @@
 import nodemailer from 'nodemailer';
 
+// Map mémoire : IP -> { count, firstRequest }
+const rateLimitMap = new Map<string, { count: number; firstRequest: number }>();
+const MAX_REQUESTS = 2;
+const WINDOW_MS = 60 * 60 * 1000; // 1 heure
+
 export default defineEventHandler(async (event) => {
+  const ip = getRequestIP(event, { xForwardedFor: true }) ?? 'unknown';
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+
+  // // Manual rate limit (replace nuxt-security)
+  // if (entry) {
+  //   if (now - entry.firstRequest < WINDOW_MS) {
+  //     if (entry.count >= MAX_REQUESTS) {
+  //       throw createError({
+  //         statusCode: 429,
+  //         message: 'Trop de tentatives. Réessayer dans une heure.',
+  //       });
+  //     }
+  //     entry.count++;
+  //   } else {
+  //     rateLimitMap.set(ip, { count: 1, firstRequest: now });
+  //   }
+  // } else {
+  //   rateLimitMap.set(ip, { count: 1, firstRequest: now });
+  // }
+
   const body = await readBody(event);
   const { nom, email, type, message } = body;
 
