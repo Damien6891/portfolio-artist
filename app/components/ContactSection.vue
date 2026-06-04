@@ -11,7 +11,7 @@
         </p>
         <ul class="contact__list reveal" data-delay="3">
           <li>
-            <a href="mailto:contact@damien-hantzer.com">
+            <a :href="`mailto:${appConfig.contact.email}`">
               <span class="ic">
                 <svg
                   viewBox="0 0 24 24"
@@ -25,12 +25,16 @@
               </span>
               <span
                 ><span class="k">Email</span
-                ><span class="v">contact@damien-hantzer.com</span></span
+                ><span class="v">{{ appConfig.contact.email }}</span></span
               >
             </a>
           </li>
           <li>
-            <a href="https://wa.me/33784151842" target="_blank" rel="noopener">
+            <a
+              :href="appConfig.contact.whatsapp"
+              target="_blank"
+              rel="noopener"
+            >
               <span class="ic">
                 <svg
                   viewBox="0 0 24 24"
@@ -45,13 +49,13 @@
               </span>
               <span>
                 <span class="k">WhatsApp</span>
-                <span class="v">+33 7 84 15 18 42</span>
+                <span class="v">{{ appConfig.contact.phone }}</span>
               </span>
             </a>
           </li>
           <li>
             <a
-              href="https://instagram.com/acro_dams"
+              :href="appConfig.contact.instagram"
               target="_blank"
               rel="noopener"
             >
@@ -73,10 +77,10 @@
                   />
                 </svg>
               </span>
-              <span
-                ><span class="k">Instagram</span
-                ><span class="v">@acro_dams</span></span
-              >
+              <span>
+                <span class="k">Instagram</span>
+                <span class="v">{{ appConfig.contact.instagramHandle }}</span>
+              </span>
             </a>
           </li>
           <li>
@@ -94,10 +98,10 @@
                   <circle cx="12" cy="10" r="2.4" />
                 </svg>
               </span>
-              <span
-                ><span class="k">Localisation</span
-                ><span class="v">Alsace, France</span></span
-              >
+              <span>
+                <span class="k">{{ $t('contact.info.location_label') }}</span>
+                <span class="v">{{ appConfig.contact.location }}</span>
+              </span>
             </div>
           </li>
         </ul>
@@ -185,6 +189,7 @@
 </template>
 
 <script setup>
+const appConfig = useAppConfig();
 const submitted = ref(false);
 const sending = ref(false);
 const form = reactive({ nom: '', email: '', type: 'spectacle', message: '' });

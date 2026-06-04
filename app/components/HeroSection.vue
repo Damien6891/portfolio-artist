@@ -11,8 +11,8 @@
     <div class="hero__content">
       <div class="badge">
         <span class="pulse"></span>
-        <b>{{ $t('hero.available') }}</b
-        ><span class="sep">—</span>{{ $t('hero.location') }}
+        <b>{{ $t('hero.available') }}</b>
+        <span class="sep">—</span>{{ appConfig.contact.location }}
       </div>
       <h1 class="hero__name">
         <span class="line"><span>Damien</span></span>
@@ -36,6 +36,7 @@
 </template>
 
 <script setup>
+const appConfig = useAppConfig();
 const { openVideo } = useLightbox();
 const heroBg = ref(null);
 
