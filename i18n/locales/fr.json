@@ -128,7 +128,7 @@
       "name_label": "Nom complet",
       "name_placeholder": "Votre nom",
       "email_label": "Email",
-      "email_placeholder": "vousexemple.com",
+      "email_placeholder": "vous{'@'}exemple.com",
       "type_label": "Type de projet",
       "type_show": "Spectacle",
       "type_event": "Événement",

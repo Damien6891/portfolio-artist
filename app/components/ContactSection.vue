@@ -110,49 +110,57 @@
           novalidate
         >
           <div class="field">
-            <label for="nom">Nom complet</label>
+            <label for="nom">{{ $t('contact.form.name_label') }}</label>
             <input
               type="text"
               id="nom"
               v-model="form.nom"
-              placeholder="Votre nom"
+              :placeholder="$t('contact.form.name_placeholder')"
               required
             />
             <p v-if="errors.nom" class="field__error">{{ errors.nom }}</p>
           </div>
           <div class="field">
-            <label for="email">Email</label>
+            <label for="email">{{ $t('contact.form.email_label') }}</label>
             <input
               type="email"
               id="email"
               v-model="form.email"
-              placeholder="vous@exemple.com"
+              :placeholder="$t('contact.form.email_placeholder')"
               required
             />
             <p v-if="errors.email" class="field__error">{{ errors.email }}</p>
           </div>
           <div class="field">
-            <label for="type">Type de projet</label>
+            <label for="type">{{ $t('contact.form.type_label') }}</label>
             <select id="type" v-model="form.type">
-              <option value="spectacle">Spectacle</option>
-              <option value="evenement">Événement</option>
-              <option value="formation">Formation</option>
-              <option value="autre">Autre</option>
+              <option value="spectacle">
+                {{ $t('contact.form.type_show') }}
+              </option>
+              <option value="evenement">
+                {{ $t('contact.form.type_event') }}
+              </option>
+              <option value="formation">
+                {{ $t('contact.form.type_training') }}
+              </option>
+              <option value="autre">{{ $t('contact.form.type_other') }}</option>
             </select>
           </div>
           <div class="field">
-            <label for="message">Message</label>
+            <label for="message">{{ $t('contact.form.message_label') }}</label>
             <textarea
               id="message"
               v-model="form.message"
-              placeholder="Parlez-moi de votre projet…"
+              :placeholder="$t('contact.form.message_placeholder')"
               required
             ></textarea>
             <p v-if="errors.message" class="field__error">
               {{ errors.message }}
             </p>
           </div>
-          <button type="submit" class="btn btn--solid">Envoyer</button>
+          <button type="submit" class="btn btn--solid">
+            {{ $t('contact.form.submit') }}
+          </button>
         </form>
         <div v-else class="form__success show">
           <div class="check">
@@ -168,8 +176,8 @@
               <path d="M7.5 12.5l3 3 6-6.5" />
             </svg>
           </div>
-          <h3>Merci {{ firstName }} !</h3>
-          <p>Votre message a bien été envoyé. Je vous réponds très vite.</p>
+          <h3>{{ $t('contact.success.title') }} {{ firstName }} !</h3>
+          <p>{{ $t('contact.success.message') }}</p>
         </div>
       </div>
     </div>
