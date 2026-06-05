@@ -25,30 +25,6 @@
       </div>
 
       <div class="disc__grid reveal disc__grid--spec">
-        <!-- <article
-          class="discipline reveal"
-          data-delay="1"
-          data-video="uLmsYlyVUjg"
-          tabindex="0"
-          aria-label="Bungee Straps — voir la vidéo"
-        >
-          <span class="discipline__icon"></span>
-          <h3 class="discipline__name">Bungee Straps</h3>
-          <p class="discipline__desc">
-            Acte signature de La Perle by Dragone — élasticité, suspension et
-            précision aérienne.
-          </p>
-          <div class="discipline__level">
-            <span class="dots"><i class="on"></i><i class="on"></i><i></i></span
-            ><span class="label">Professionnel</span>
-          </div>
-          <span class="discipline__play">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          </span>
-        </article> -->
-
         <article
           v-for="(disc, i) in mainDisciplines"
           :key="disc.name"

@@ -22,10 +22,11 @@
       <div class="lightbox__frame">
         <iframe
           v-if="videoId"
-          :src="`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`"
           title="Vidéo"
+          :src="`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`"
           allow="autoplay; encrypted-media; fullscreen"
           allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
         ></iframe>
       </div>
     </div>

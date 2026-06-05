@@ -43,6 +43,21 @@ export default defineNuxtConfig({
     },
   },
 
+  // security for youtube videos
+  security: {
+    rateLimiter: false,
+    headers: {
+      referrerPolicy: 'strict-origin-when-cross-origin',
+      contentSecurityPolicy: {
+        'frame-src': [
+          "'self'",
+          'https://www.youtube.com',
+          'https://www.youtube-nocookie.com',
+        ],
+      },
+    },
+  },
+
   devtools: { enabled: true },
   modules: ['@nuxtjs/i18n', '@nuxt/image', 'nuxt-security'],
 
