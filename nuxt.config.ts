@@ -53,6 +53,7 @@ export default defineNuxtConfig({
   security: {
     rateLimiter: false,
     headers: {
+      crossOriginEmbedderPolicy: false,
       referrerPolicy: 'strict-origin-when-cross-origin',
       contentSecurityPolicy: {
         'frame-src': [
