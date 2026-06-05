@@ -2,6 +2,7 @@
   <div>
     <NavBar />
     <VideoLightbox />
+    <PhotoLightbox />
     <NuxtPage />
     <FooterSection />
   </div>

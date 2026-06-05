@@ -4,6 +4,7 @@
     <AboutSection />
     <DisciplinesSection />
     <CareerSection />
+    <GallerySection />
     <!-- <TrophiesSection /> -->
     <ContactSection />
   </div>
