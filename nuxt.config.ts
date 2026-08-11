@@ -67,7 +67,7 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
-  modules: ['@nuxtjs/i18n', '@nuxt/image', 'nuxt-security'],
+  modules: ['@nuxtjs/i18n', '@nuxt/image', 'nuxt-security', '@nuxt/scripts'],
 
   css: ['./assets/css/main.css'],
 
